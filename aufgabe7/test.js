@@ -1,35 +1,35 @@
 window.addEventListener("load", function () {
     document.querySelector(".germany").addEventListener("click", function () {
-        document.querySelector("#Einwohnerzahl").innerHTML = String(num1);
-        document.querySelector("#prozentualerAnteil").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate1990").innerHTML = String((num1 - num2).toFixed(2));
+        document.querySelector("#Einwohnerzahl").innerHTML = String(num1 + text2);
+        document.querySelector("#prozentualerAnteil").innerHTML = String((num1 / num3 * num4).toFixed(2) + text5);
+        document.querySelector("#Wachstumsrate1990").innerHTML = String((num1 - num2).toFixed(2) + text2);
         document.querySelector("span").innerHTML = "Deutschland";
+        document.querySelector(".chart").setAttribute('style', 'height: ' + String((num1 / num3 * num4).toFixed(2)) + '%');
     });
     document.querySelector(".italy").addEventListener("click", function () {
-        document.querySelector("#Einwohnerzahl").innerHTML = "xx";
-        document.querySelector("#prozentualerAnteil").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate1990").innerHTML = "xx";
-        document.querySelector("span").innerHTML = "xx";
+        document.querySelector("#Einwohnerzahl").innerHTML = String(num5 + text2);
+        document.querySelector("#prozentualerAnteil").innerHTML = String((num5 / num3 * num4).toFixed(2) + text5);
+        document.querySelector("#Wachstumsrate1990").innerHTML = String((num5 - num6).toFixed(2) + text2);
+        document.querySelector("span").innerHTML = "Italien";
+        document.querySelector(".chart").setAttribute('style', 'height: ' + String((num5 / num3 * num4).toFixed(2)) + '%');
     });
     document.querySelector(".netherlands").addEventListener("click", function () {
-        document.querySelector("#Einwohnerzahl").innerHTML = "xx";
-        document.querySelector("#prozentualerAnteil").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate1990").innerHTML = "xx";
-        document.querySelector("span").innerHTML = "xx";
+        document.querySelector("#Einwohnerzahl").innerHTML = String(num7 + text2);
+        document.querySelector("#prozentualerAnteil").innerHTML = String((num7 / num3 * num4).toFixed(2) + text5);
+        document.querySelector("#Wachstumsrate1990").innerHTML = String((num7 - num8).toFixed(2) + text2);
+        document.querySelector("span").innerHTML = "Niederlande";
+        document.querySelector(".chart").setAttribute('style', 'height: ' + String((num7 / num3 * num4).toFixed(2)) + '%');
     });
     document.querySelector(".france").addEventListener("click", function () {
-        document.querySelector("#Einwohnerzahl").innerHTML = "xx";
-        document.querySelector("#prozentualerAnteil").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate").innerHTML = "xx";
-        document.querySelector("#Wachstumsrate1990").innerHTML = "xx";
-        document.querySelector("span").innerHTML = "xx";
+        document.querySelector("#Einwohnerzahl").innerHTML = String(num9 + text2);
+        document.querySelector("#prozentualerAnteil").innerHTML = String((num9 / num3 * num4).toFixed(2) + text5);
+        document.querySelector("#Wachstumsrate1990").innerHTML = String((num9 - num10).toFixed(2) + text2);
+        document.querySelector("span").innerHTML = "Frankreich";
+        document.querySelector(".chart").setAttribute('style', 'height: ' + String((num9 / num3 * num4).toFixed(2)) + '%');
     });
     var num1 = 83.2;
     var text1 = ("Die Gesamteinwohnerzahl Deutschlands beträgt ");
-    var text2 = (" Millionen.");
+    var text2 = (" Millionen");
     console.log(text1 + num1 + text2);
     var num2 = 79.753;
     var text3 = ("Die Wachstumsrate zwischen 1990 und 2022 entspricht ");
