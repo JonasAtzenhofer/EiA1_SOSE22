@@ -33,6 +33,16 @@ document.querySelector("span").innerHTML = "Frankreich";
 document.querySelector(".chart").setAttribute('style', 'height: '+String((num9 / num3 * num4).toFixed(2))+'%')
 })
 
+
+document.querySelector(".stars").addEventListener("click", function() {
+    document.querySelector("#Einwohnerzahl").innerHTML = String(num3+text2);
+document.querySelector("#prozentualerAnteil").innerHTML =String("100%");
+document.querySelector("#Wachstumsrate1990").innerHTML = String((num3 - num11).toFixed(2)+text2);
+document.querySelector("span").innerHTML = "der EU";
+document.querySelector(".chart").setAttribute('style', 'height: '+String((num4 / num4 * num4))+'%')
+})
+
+
 var num1:number = 83.2;
 var text1:string = ("Die Gesamteinwohnerzahl Deutschlands beträgt ");
 var text2:string = (" Millionen");
@@ -83,4 +93,12 @@ console.log(text3 +(num9 - num10) + text2);
 
 var text11:string = ("Der prozentuale Anteil der französischen Bevölkerung zur Europäischen Union beträgt ");
 console.log(text11 + (num9 / num3 * num4) + text5);
+
+var num11:number = 418 
+
+
+
 })
+
+
+
