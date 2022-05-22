@@ -1,4 +1,6 @@
+window.addEventListener("load", function() {
 const sounds: HTMLAudioElement[] = 
+
 [
     new Audio("Aufgabe8_assets_hihat.mp3"),
     new Audio("Aufgabe8_assets_kick.mp3"),
@@ -38,4 +40,4 @@ function playBeat() {
     // Klick-Event Playbutton
     document.querySelector("#playbutton").addEventListener("click", function() {playBeat()});
 
-
+})
