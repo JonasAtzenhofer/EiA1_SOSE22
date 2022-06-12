@@ -1,10 +1,36 @@
-var names: string[] = ["Ben", "Ella", "Emil", "Emilia", "Emma", "Finn", "Hannah", "Lea", "Leon", "Lina", "Louis", "Luca", "Marie", "Matteo", "Mia", "Mila", "Noah", "Paul", "Sophia", "Theo"];
+interface Person {
+    namen: string
+    alter: number
+    geschlecht: string
 
-for (var index: number = 0; index < names.length; index++) {
-   
-   console.log(index);
-   console.log(  names[index]);
-   document.querySelector("#liste").innerHTML += names[index] + "<br>"
 }
+var Person: Person [] = [
+  { namen: "Robert",
+   alter: 22,
+   geschlecht: "männlich",
+},
+{
 
-document.querySelector("span").innerHTML = names.length + ""
+   namen: "Saskia",
+   alter: 21,
+   geschlecht: "weiblich",
+},
+
+{
+   namen: "Tristan",
+   alter: 19,
+   geschlecht: "männlich",
+}]
+
+for ( let index:number = 0; index < Person.length; index++)
+
+console.log(Person[index].namen);
+
+var Rechnen: number[] = [15,25,50,100]
+
+
+let numbers: number[] = [5,15,25,30]
+let summe: number = 0;
+for (let index: number = 0; index<numbers.length; index++)
+{ summe = summe + index}
+console.log(summe)
